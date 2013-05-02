@@ -30,7 +30,7 @@ require "integrity"
 
 Integrity.configure do |c|
   # DataMapper database connection URI
-  c.database                    = "sqlite3:db/integrity.db"
+  c.database                    = "mysql://root@localhost/integrity"
   # PostgreSQL via the local socket to "integrity" database:
   # c.database                  = "postgres:///integrity"
   # PostgreSQL via a more full specification:
@@ -44,17 +44,17 @@ Integrity.configure do |c|
   # c.directory                 = File.dirname(__FILE__) + '/tmp/builds'
   
   # URL to the root of Integrity installation, used in notification emails:
-  c.base_url                    = "http://ci.example.org"
+  c.base_url                    = "http://soviet.nyhq.nytint.com"
   
   # Where to write the log file.
   # If running on Heroku, comment out c.log
   c.log                         = "integrity.log"
   
   # Enable GitHub post-receive hook
-  c.github_token                = "SECRET"
+  c.github_token                = ""
   
   # If true, build all commits. If false, only build HEAD after each push
-  c.build_all                   = true
+  c.build_all                   = false
   
   # Automatically create projects for newly pushed branches
   c.auto_branch                 = false
