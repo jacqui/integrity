@@ -51,7 +51,7 @@ Integrity.configure do |c|
   c.log                         = "integrity.log"
   
   # Enable GitHub post-receive hook
-  c.github_token                = ""
+  c.github_token                = "74bZRfMu3LogFmGbzPuP"
   
   # If true, build all commits. If false, only build HEAD after each push
   c.build_all                   = false
