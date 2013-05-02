@@ -1,3 +1,4 @@
 worker_processes 1
-listen '127.0.0.1:8910'
-pid '/var/run/integrity/server.pid'
+listen '/tmp/integrity.sock'
+
+pid 'tmp/pids/server.pid'
