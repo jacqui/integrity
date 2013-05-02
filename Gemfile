@@ -7,7 +7,7 @@ gem 'do_sqlite3'
 # Workaround until https://github.com/datamapper/dm-core/issues/242
 # is fixed in a released version of datamapper.
 gem 'dm-core',
-  :git => 'git://github.com/datamapper/dm-core',
+  :git => 'https://github.com/datamapper/dm-core',
   :branch => 'release-1.2'
 
 gem 'haml'
@@ -23,7 +23,7 @@ gem 'bcat'
 # gem 'thin'
 
 # If you want to use Unicorn:
-# gem 'unicorn'
+gem 'unicorn'
 
 # These are dependencies for the various notifiers. Uncomment as appropriate.
 # = Email
@@ -57,8 +57,8 @@ gem 'bcat'
 # If installing dependencies with rpg:
 # gem 'do_postgres', '0.10.2'
 
-# gem 'mysql'
-# gem 'dm-mysql-adapter', '1.0.2'
+gem 'mysql'
+gem 'dm-mysql-adapter', '1.2.0'
 
 # = Development dependencies.
 group :test do
@@ -73,7 +73,7 @@ group :test do
   gem 'mocha'
   gem 'redgreen'
   gem 'dm-sweatshop',
-    :git => 'git://github.com/p/dm-sweatshop-without-parsetree',
+    :git => 'https://github.com/p/dm-sweatshop-without-parsetree',
     :branch => 'integrity'
   gem 'randexp'
   gem 'pony'
